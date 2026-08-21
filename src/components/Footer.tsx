@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-copper/25">
       <div className="mx-auto flex max-w-folio flex-col items-center px-5 py-16 text-center sm:px-8">
         <Link href="/" aria-label={`${site.name} home`}>
-          <LogoMark className="h-28 w-auto" sizes="140px" />
+          <LogoMark src="/logo-pbl.png" className="h-28 w-auto" sizes="140px" />
         </Link>
         <Rule className="mt-8" />
         <p className="mt-8 font-display text-sm uppercase tracking-house text-ink">
