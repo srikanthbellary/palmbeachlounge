@@ -59,3 +59,12 @@ body {
     transparent
   );
 }
+
+@media (max-width: 767px) {
+  #lounge,
+  #atelier,
+  #visit,
+  #contact {
+    scroll-margin-top: 5.25rem;
+  }
+}
