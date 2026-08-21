@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { LogoMark } from "@/components/LogoMark";
 import { nav, site } from "@/lib/site";
 
 export function Header() {
@@ -19,15 +18,9 @@ export function Header() {
 
         <Link
           href="/"
-          aria-label={`${site.name} home`}
-          className="order-1 flex items-center justify-center gap-3 lg:order-2"
+          className="order-1 font-display text-[0.68rem] uppercase tracking-house text-ink sm:text-[0.75rem] lg:order-2"
         >
-          <LogoMark className="h-12 w-auto sm:h-14" sizes="56px" priority />
-          <span className="text-left font-display text-[0.68rem] uppercase leading-snug tracking-house text-ink sm:text-[0.75rem]">
-            Palm Beach
-            <br />
-            Lounge
-          </span>
+          {site.name}
         </Link>
 
         <div className="order-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 lg:justify-end">
