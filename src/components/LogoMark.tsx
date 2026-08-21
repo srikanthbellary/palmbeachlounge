@@ -5,16 +5,18 @@ type LogoMarkProps = {
   className?: string;
   priority?: boolean;
   sizes?: string;
+  src?: string;
 };
 
 export function LogoMark({
   className = "h-14 w-auto",
   priority = false,
   sizes = "120px",
+  src = "/logo-pbl.png",
 }: LogoMarkProps) {
   return (
     <Image
-      src="/logo-pbl.png"
+      src={src}
       alt={site.name}
       width={1024}
       height={1024}

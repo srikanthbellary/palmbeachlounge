@@ -9,6 +9,7 @@ export function Hero() {
       className="flex min-h-[calc(100svh-5.5rem)] flex-col items-center justify-center px-5 py-16 text-center sm:px-8"
     >
       <LogoMark
+        src="/logo-pbl-hero.png"
         className="h-auto w-full max-w-[22rem] sm:max-w-[26rem]"
         sizes="(max-width: 640px) 22rem, 26rem"
         priority
