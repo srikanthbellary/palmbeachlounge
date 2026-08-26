@@ -31,16 +31,13 @@ export function Atelier() {
               <li key={category.id} className="flex flex-col items-center">
                 <figure className="flex w-full max-w-[17.5rem] flex-col items-center">
                   <div className="plate-frame aspect-[4/5] w-full">
-                    <p className="plate-index" aria-hidden>
-                      {category.plate}
-                    </p>
                     <div className="plate-frame-inner">
                       <PlateStillLife id={category.id} />
                     </div>
                   </div>
                   <figcaption className="mt-7">
                     <h3 className="font-display text-[1.05rem] uppercase tracking-house text-ink">
-                      Plate {category.plate} — {category.name}
+                      {category.name}
                     </h3>
                     <p className="mx-auto mt-4 max-w-xs text-sm leading-relaxed text-mute">
                       {category.sentence}

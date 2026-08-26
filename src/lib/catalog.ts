@@ -17,7 +17,6 @@ export type InquiryAbout = "lounge" | CategoryId;
 
 export type Category = {
   id: CategoryId;
-  plate: "I" | "II" | "III" | "IV";
   name: string;
   sentence: string;
 };
@@ -32,25 +31,21 @@ export type CatalogItem = {
 export const categories: Category[] = [
   {
     id: "parfum",
-    plate: "I",
     name: "Parfum",
     sentence: "Scent, chosen slowly, and worn close.",
   },
   {
     id: "bijoux",
-    plate: "II",
     name: "Bijoux",
     sentence: "Jewels for the hand, the throat, and the hour.",
   },
   {
     id: "table",
-    plate: "III",
     name: "Table",
     sentence: "Linen, silver, and the things a table remembers.",
   },
   {
     id: "atelier",
-    plate: "IV",
     name: "Atelier",
     sentence: "Dress and cloth, cut for the body that will wear them.",
   },
