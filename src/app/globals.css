@@ -140,6 +140,16 @@ body {
   color: #8c5e32;
 }
 
+.calling-card {
+  border: 1px solid rgba(176, 138, 91, 0.34);
+  padding: 0.7rem;
+}
+
+.calling-card-inner {
+  border: 1px solid rgba(176, 138, 91, 0.16);
+  padding: 1.25rem 1rem 0.85rem;
+}
+
 .hairline {
   background: linear-gradient(
     90deg,
