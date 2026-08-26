@@ -1,12 +1,14 @@
 import Link from "next/link";
+import { LinenRepeat } from "@/components/craft/LinenRepeat";
 import { LogoMark } from "@/components/LogoMark";
 import { Rule } from "@/components/Rule";
 import { site } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-copper/25">
-      <div className="mx-auto flex max-w-folio flex-col items-center px-5 py-16 text-center sm:px-8">
+    <footer className="relative overflow-hidden border-t border-copper/25">
+      <LinenRepeat />
+      <div className="relative z-10 mx-auto flex max-w-folio flex-col items-center px-5 py-16 text-center sm:px-8">
         <Link href="/" aria-label={`${site.name} home`}>
           <LogoMark src="/logo-pbl.png" className="h-28 w-auto" sizes="140px" />
         </Link>

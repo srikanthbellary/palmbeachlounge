@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Cinzel, Figtree } from "next/font/google";
+import { AfternoonLight } from "@/components/craft/AfternoonLight";
+import { CopperplateFrame } from "@/components/craft/CopperplateFrame";
+import { LetterheadWatermark } from "@/components/craft/LetterheadWatermark";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
@@ -66,15 +69,22 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <body className="parchment font-sans text-ink antialiased">
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:border focus:border-copper focus:bg-card focus:px-4 focus:py-2"
-        >
-          Skip to content
-        </a>
-        <Header />
-        {children}
-        <Footer />
+        <AfternoonLight />
+        <div className="paper relative z-10">
+          <CopperplateFrame />
+          <LetterheadWatermark />
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:border focus:border-copper focus:bg-card focus:px-4 focus:py-2"
+          >
+            Skip to content
+          </a>
+          <Header />
+          <div className="relative z-10">{children}</div>
+          <div className="relative z-10">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
