@@ -14,7 +14,7 @@ export function Rule({ className = "" }: RuleProps) {
         <span className="h-px bg-copper/55" />
         <span className="h-px bg-copper/22" />
       </span>
-      <FourPointStar className="text-copper" size={9} />
+      <FourPointStar className="text-copper" size={11} />
       <span className="flex flex-1 flex-col gap-[3px]">
         <span className="h-px bg-copper/55" />
         <span className="h-px bg-copper/22" />

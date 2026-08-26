@@ -13,50 +13,58 @@ function ParfumEngraving() {
   return (
     <svg viewBox="0 0 200 240" className="h-full w-full text-copper" aria-hidden>
       <g {...line}>
-        <ellipse cx="100" cy="26" rx="13" ry="7" strokeWidth="0.7" />
+        <path strokeWidth="0.4" opacity="0.28" d="M36 222 H164" />
+        <ellipse cx="100" cy="222" rx="38" ry="4" strokeWidth="0.35" opacity="0.22" />
+        <ellipse cx="100" cy="22" rx="12" ry="6.5" strokeWidth="0.7" />
         <path
           strokeWidth="0.7"
-          d="M87 32 C87 28 91 24 100 24 C109 24 113 28 113 32 L110 50 H90 Z"
+          d="M88 28 C88 24 93 20 100 20 C107 20 112 24 112 28 L109 48 H91 Z"
         />
-        <path strokeWidth="0.45" opacity="0.55" d="M93 32 H107" />
-        <path strokeWidth="0.45" opacity="0.4" d="M100 24 V50" />
-        <path strokeWidth="0.7" d="M94 50 V76 H106 V50" />
-        <path strokeWidth="0.7" d="M86 76 H114 V84 H86 Z" />
+        <path strokeWidth="0.4" opacity="0.5" d="M94 28 H106 M100 20 V48" />
+        <path strokeWidth="0.45" opacity="0.4" d="M92 36 H108" />
+        <path strokeWidth="0.7" d="M94 48 V74 H106 V48" />
+        <path strokeWidth="0.55" d="M97 48 V74 M103 48 V74" opacity="0.35" />
+        <path strokeWidth="0.75" d="M84 74 H116 V83 H84 Z" />
+        <path strokeWidth="0.4" d="M88 74 V83 M112 74 V83" opacity="0.4" />
         <path
-          strokeWidth="0.75"
-          d="M86 84 C70 90 64 102 64 118 V196 C64 208 74 216 86 216 H114 C126 216 136 208 136 196 V118 C136 102 130 90 114 84"
+          strokeWidth="0.8"
+          d="M84 83 C66 90 60 104 60 122 V194 C60 208 72 218 86 218 H114 C128 218 140 208 140 194 V122 C140 104 134 90 116 83"
+        />
+        <path
+          strokeWidth="0.4"
+          opacity="0.4"
+          d="M72 118 C74 108 80 96 92 88"
         />
         <path
           strokeWidth="0.45"
-          opacity="0.45"
-          d="M74 112 V192 C74 202 80 208 88 208"
+          opacity="0.5"
+          d="M70 124 V190 C70 202 78 210 88 212"
         />
+        <rect x="82" y="116" width="36" height="54" rx="1.5" strokeWidth="0.6" />
         <rect
-          x="84"
-          y="118"
-          width="32"
-          height="48"
-          rx="1.5"
-          strokeWidth="0.55"
-        />
-        <rect
-          x="88"
-          y="122"
-          width="24"
-          height="40"
+          x="86"
+          y="120"
+          width="28"
+          height="46"
           rx="1"
           strokeWidth="0.4"
+          opacity="0.75"
+        />
+        <path
+          className="text-forest"
+          strokeWidth="0.5"
+          d="M62 178 C78 173 122 183 138 178"
           opacity="0.7"
         />
         <path
           className="text-forest"
-          strokeWidth="0.45"
-          d="M66 176 C80 172 120 180 134 176"
-          opacity="0.65"
+          strokeWidth="0.35"
+          d="M64 182 C80 178 120 186 136 182"
+          opacity="0.4"
         />
-        <path strokeWidth="0.4" opacity="0.35" d="M76 216 H124" />
+        <path strokeWidth="0.4" opacity="0.3" d="M80 218 H120" />
       </g>
-      <g className="text-copper" transform="translate(95 138)">
+      <g className="text-copper" transform="translate(95 136)">
         <FourPointStar size={10} />
       </g>
     </svg>
@@ -67,34 +75,50 @@ function BijouxEngraving() {
   return (
     <svg viewBox="0 0 200 240" className="h-full w-full text-copper" aria-hidden>
       <g {...line}>
-        <ellipse cx="100" cy="22" rx="3.2" ry="2.4" strokeWidth="0.55" />
-        <ellipse cx="100" cy="34" rx="3.2" ry="2.4" strokeWidth="0.55" />
-        <ellipse cx="100" cy="46" rx="3.2" ry="2.4" strokeWidth="0.55" />
-        <path strokeWidth="0.5" d="M100 48 V62" />
+        <path strokeWidth="0.4" opacity="0.28" d="M40 226 H160" />
+        <circle cx="100" cy="20" r="2.6" strokeWidth="0.55" />
+        <path strokeWidth="0.45" d="M100 22.6 V28" />
+        <ellipse cx="100" cy="33" rx="3.4" ry="2.6" strokeWidth="0.55" />
+        <ellipse cx="100" cy="44" rx="3.4" ry="2.6" strokeWidth="0.55" />
+        <ellipse cx="100" cy="55" rx="3.4" ry="2.6" strokeWidth="0.55" />
+        <path strokeWidth="0.5" d="M100 57.6 V68" />
         <path
           strokeWidth="0.7"
-          d="M100 62 C92 62 88 68 88 74 C88 80 93 84 100 84 C107 84 112 80 112 74 C112 68 108 62 100 62"
+          d="M100 68 C91 68 86 74 86 80 C86 87 92 92 100 92 C108 92 114 87 114 80 C114 74 109 68 100 68"
         />
-        <ellipse cx="100" cy="128" rx="30" ry="40" strokeWidth="0.8" />
-        <ellipse
-          cx="100"
-          cy="128"
-          rx="21"
-          ry="30"
+        <path
+          strokeWidth="0.8"
+          d="M100 96 C82 96 70 112 70 130 C70 152 84 170 100 170 C116 170 130 152 130 130 C130 112 118 96 100 96"
+        />
+        <path
           strokeWidth="0.45"
           opacity="0.7"
+          d="M100 104 C86 104 78 116 78 130 C78 148 88 162 100 162 C112 162 122 148 122 130 C122 116 114 104 100 104"
         />
-        <path strokeWidth="0.4" opacity="0.45" d="M100 90 V166" />
-        <path strokeWidth="0.4" opacity="0.4" d="M76 114 L124 142" />
-        <path strokeWidth="0.4" opacity="0.4" d="M124 114 L76 142" />
-        <path strokeWidth="0.55" d="M100 86 L103 92 H97 Z" />
-        <path strokeWidth="0.55" d="M100 170 L103 164 H97 Z" />
-        <path strokeWidth="0.55" d="M68 128 L74 125 V131 Z" />
-        <path strokeWidth="0.55" d="M132 128 L126 125 V131 Z" />
-        <ellipse cx="100" cy="186" rx="5" ry="7" strokeWidth="0.6" />
-        <path strokeWidth="0.45" d="M100 168 V179" />
+        <path strokeWidth="0.4" opacity="0.4" d="M100 104 V162" />
+        <path strokeWidth="0.4" opacity="0.38" d="M78 122 L122 138" />
+        <path strokeWidth="0.4" opacity="0.38" d="M122 122 L78 138" />
+        <path strokeWidth="0.55" d="M100 96 L104 104 H96 Z" />
+        <path strokeWidth="0.55" d="M70 130 L78 126 V134 Z" />
+        <path strokeWidth="0.55" d="M130 130 L122 126 V134 Z" />
+        <path strokeWidth="0.55" d="M100 170 L104 162 H96 Z" />
+        <path strokeWidth="0.5" d="M100 170 V182" />
+        <ellipse cx="100" cy="192" rx="6" ry="8.5" strokeWidth="0.65" />
+        <ellipse
+          cx="100"
+          cy="192"
+          rx="3.2"
+          ry="5"
+          strokeWidth="0.35"
+          opacity="0.5"
+        />
+        <path
+          strokeWidth="0.35"
+          opacity="0.3"
+          d="M84 118 C90 112 110 112 116 118"
+        />
       </g>
-      <g className="text-copper" transform="translate(95 116)">
+      <g className="text-copper" transform="translate(95 118)">
         <FourPointStar size={10} />
       </g>
     </svg>
@@ -105,61 +129,49 @@ function TableEngraving() {
   return (
     <svg viewBox="0 0 200 240" className="h-full w-full text-copper" aria-hidden>
       <g {...line}>
+        <path strokeWidth="0.4" opacity="0.28" d="M28 226 H172" />
         <path
-          strokeWidth="0.7"
-          d="M38 46 H108 L96 118 H26 Z"
+          strokeWidth="0.75"
+          d="M30 52 H108 L94 128 H18 Z"
         />
         <path
           strokeWidth="0.5"
-          opacity="0.65"
-          d="M38 46 L68 78 L56 118"
+          opacity="0.7"
+          d="M30 52 L64 86 L52 128"
         />
-        <path strokeWidth="0.4" opacity="0.4" d="M52 46 L74 70 L64 118" />
-        <ellipse cx="112" cy="168" rx="62" ry="26" strokeWidth="0.75" />
+        <path strokeWidth="0.4" opacity="0.45" d="M48 52 L72 80 L62 128" />
+        <path
+          strokeWidth="0.35"
+          opacity="0.35"
+          d="M38 64 H92 M34 78 H86 M28 104 H80"
+        />
+        <ellipse cx="118" cy="172" rx="64" ry="28" strokeWidth="0.8" />
         <ellipse
-          cx="112"
-          cy="168"
-          rx="50"
-          ry="18"
-          strokeWidth="0.45"
-          opacity="0.65"
-        />
-        <path
-          className="text-forest"
-          strokeWidth="0.7"
-          d="M146 36 L92 150"
-          opacity="0.85"
-        />
-        <path
-          className="text-forest"
-          strokeWidth="0.55"
-          d="M146 36 L150 48 L142 46 Z"
-        />
-        <path
-          className="text-forest"
-          strokeWidth="0.55"
-          d="M92 150 L86 172"
-        />
-        <path
-          className="text-forest"
+          cx="118"
+          cy="172"
+          rx="52"
+          ry="20"
           strokeWidth="0.5"
-          d="M92 150 L80 174"
+          opacity="0.7"
         />
-        <path
-          className="text-forest"
-          strokeWidth="0.5"
-          d="M92 150 L90 176"
+        <ellipse
+          cx="118"
+          cy="172"
+          rx="22"
+          ry="8"
+          strokeWidth="0.35"
+          opacity="0.35"
         />
-        <path
-          className="text-forest"
-          strokeWidth="0.5"
-          d="M92 150 L100 174"
-        />
-        <path
-          strokeWidth="0.4"
-          opacity="0.4"
-          d="M70 168 H154"
-        />
+        <g className="text-forest" opacity="0.88">
+          <path strokeWidth="0.75" d="M158 34 L96 148" />
+          <path strokeWidth="0.55" d="M158 34 L164 48 L154 46 Z" />
+          <path strokeWidth="0.45" d="M148 56 L152 66" />
+          <path strokeWidth="0.55" d="M96 148 L78 186" />
+          <path strokeWidth="0.5" d="M96 148 L86 188" />
+          <path strokeWidth="0.5" d="M96 148 L96 190" />
+          <path strokeWidth="0.5" d="M96 148 L106 188" />
+          <path strokeWidth="0.4" d="M80 184 L108 184" opacity="0.45" />
+        </g>
       </g>
     </svg>
   );
@@ -169,45 +181,56 @@ function DressEngraving() {
   return (
     <svg viewBox="0 0 200 240" className="h-full w-full text-copper" aria-hidden>
       <g {...line}>
-        <path strokeWidth="0.7" d="M32 44 H168" />
-        <circle cx="32" cy="44" r="3" strokeWidth="0.55" />
-        <circle cx="168" cy="44" r="3" strokeWidth="0.55" />
-        <path
-          strokeWidth="0.75"
-          d="M46 44 C46 52 40 60 40 78 C40 110 52 150 48 200 C70 210 90 214 100 214 C110 214 130 210 152 200 C148 150 160 110 160 78 C160 60 154 52 154 44"
-        />
-        <path
-          strokeWidth="0.5"
-          opacity="0.7"
-          d="M64 44 C62 80 70 130 68 206"
-        />
-        <path
-          strokeWidth="0.5"
-          opacity="0.7"
-          d="M100 44 C98 90 102 150 100 214"
-        />
-        <path
-          strokeWidth="0.5"
-          opacity="0.7"
-          d="M136 44 C138 80 130 130 132 206"
-        />
+        <path strokeWidth="0.4" opacity="0.28" d="M36 226 H164" />
+        <path strokeWidth="0.75" d="M28 40 H172" />
+        <circle cx="28" cy="40" r="3.2" strokeWidth="0.55" />
+        <circle cx="172" cy="40" r="3.2" strokeWidth="0.55" />
         <path
           strokeWidth="0.45"
-          opacity="0.45"
-          d="M80 44 C78 100 86 160 82 210"
+          opacity="0.4"
+          d="M28 40 C28 46 36 48 44 44"
         />
         <path
-          strokeWidth="0.45"
-          opacity="0.45"
-          d="M120 44 C122 100 114 160 118 210"
+          strokeWidth="0.8"
+          d="M48 40 C46 58 36 72 38 96 C40 128 54 164 46 204 C72 216 90 220 100 220 C110 220 128 216 154 204 C146 164 160 128 162 96 C164 72 154 58 152 40"
+        />
+        <path
+          strokeWidth="0.55"
+          opacity="0.75"
+          d="M66 40 C62 86 74 140 64 208"
+        />
+        <path
+          strokeWidth="0.55"
+          opacity="0.75"
+          d="M100 40 C96 92 104 150 100 220"
+        />
+        <path
+          strokeWidth="0.55"
+          opacity="0.75"
+          d="M134 40 C138 86 126 140 136 208"
+        />
+        <path
+          strokeWidth="0.4"
+          opacity="0.4"
+          d="M82 40 C78 100 90 160 80 214"
+        />
+        <path
+          strokeWidth="0.4"
+          opacity="0.4"
+          d="M118 40 C122 100 110 160 120 214"
         />
         <path
           className="text-forest"
-          strokeWidth="0.5"
-          d="M48 200 C70 208 90 212 100 212 C110 212 130 208 152 200"
+          strokeWidth="0.55"
+          d="M46 204 C72 214 90 218 100 218 C110 218 128 214 154 204"
           opacity="0.7"
         />
-        <path strokeWidth="0.4" opacity="0.4" d="M70 44 H130" />
+        <path strokeWidth="0.4" opacity="0.35" d="M72 40 H128" />
+        <path
+          strokeWidth="0.4"
+          opacity="0.3"
+          d="M58 70 C80 78 120 78 142 70"
+        />
       </g>
     </svg>
   );

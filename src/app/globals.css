@@ -75,12 +75,12 @@ body {
       180deg,
       transparent,
       transparent 44px,
-      rgba(15, 42, 28, 0.018) 44px,
-      rgba(15, 42, 28, 0.018) 47px
+      rgba(15, 42, 28, 0.03) 44px,
+      rgba(15, 42, 28, 0.03) 48px
     ),
     radial-gradient(
       ellipse 46% 38% at 16% 10%,
-      rgba(176, 128, 118, 0.045),
+      rgba(176, 128, 118, 0.055),
       transparent 70%
     );
   background-size: 100% 100%, 100% 240%, 100% 100%;
@@ -113,9 +113,10 @@ body {
 }
 
 .plate-frame {
-  border: 1px solid rgba(176, 138, 91, 0.38);
-  background: rgba(248, 243, 234, 0.35);
-  padding: 0.7rem;
+  position: relative;
+  border: 1px solid rgba(176, 138, 91, 0.34);
+  background: transparent;
+  padding: 0.85rem 0.7rem 0.55rem;
 }
 
 .plate-frame-inner {
@@ -123,8 +124,20 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(176, 138, 91, 0.2);
-  padding: 0.85rem 0.7rem 0.5rem;
+  border: 1px solid rgba(176, 138, 91, 0.16);
+  padding: 0.35rem 0.45rem 0.15rem;
+}
+
+.plate-index {
+  position: absolute;
+  left: 50%;
+  top: 0.35rem;
+  transform: translateX(-50%);
+  font-family: var(--font-display), Cinzel, serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #8c5e32;
 }
 
 .hairline {
