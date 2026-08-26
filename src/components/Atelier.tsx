@@ -1,5 +1,6 @@
 import { itemsFor, categories } from "@/lib/catalog";
 import { inquireHref } from "@/lib/site";
+import { PlateStillLife } from "@/components/craft/PlateStillLifes";
 import { Rule } from "@/components/Rule";
 
 export function Atelier() {
@@ -22,21 +23,27 @@ export function Atelier() {
           page.
         </p>
 
-        <ul className="mx-auto mt-16 grid max-w-4xl gap-5 sm:grid-cols-2">
+        <ul className="mx-auto mt-20 grid max-w-4xl gap-x-16 gap-y-20 sm:grid-cols-2">
           {categories.map((category) => {
             const pieces = itemsFor(category.id);
 
             return (
-              <li
-                key={category.id}
-                className="flex flex-col border border-copper/30 bg-card/80 px-8 py-12"
-              >
-                <h3 className="font-display text-2xl uppercase tracking-house text-ink">
-                  {category.name}
-                </h3>
-                <p className="mx-auto mt-5 max-w-xs flex-1 text-sm leading-relaxed text-mute">
-                  {category.sentence}
-                </p>
+              <li key={category.id} className="flex flex-col items-center">
+                <figure className="flex w-full max-w-[19rem] flex-col items-center">
+                  <div className="plate-frame aspect-square w-full">
+                    <div className="plate-frame-inner">
+                      <PlateStillLife id={category.id} />
+                    </div>
+                  </div>
+                  <figcaption className="mt-8">
+                    <h3 className="font-display text-lg uppercase tracking-house text-ink">
+                      Plate {category.plate} — {category.name}
+                    </h3>
+                    <p className="mx-auto mt-4 max-w-xs text-sm leading-relaxed text-mute">
+                      {category.sentence}
+                    </p>
+                  </figcaption>
+                </figure>
                 {pieces.length > 0 ? (
                   <ul className="mt-8 space-y-2 text-sm text-ink">
                     {pieces.map((item) => (
@@ -46,7 +53,7 @@ export function Atelier() {
                 ) : null}
                 <a
                   href={inquireHref(category.id)}
-                  className="mt-10 inline-flex items-center justify-center self-center border-b border-copper pb-1 text-[0.68rem] uppercase tracking-[0.22em] text-forest hover:border-forest"
+                  className="mt-8 inline-flex items-center justify-center border-b border-copper pb-1 text-[0.68rem] uppercase tracking-[0.22em] text-forest hover:border-forest"
                 >
                   Inquire
                 </a>

@@ -25,6 +25,10 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  .afternoon-light {
+    animation: none !important;
+  }
 }
 
 body {
@@ -42,13 +46,85 @@ body {
   background-image:
     linear-gradient(
       180deg,
-      rgba(15, 42, 28, 0.03),
-      transparent 22%,
-      transparent 78%,
-      rgba(140, 94, 50, 0.04)
+      rgba(248, 243, 234, 0.45),
+      transparent 26%,
+      transparent 74%,
+      rgba(140, 94, 50, 0.045)
     ),
-    radial-gradient(rgba(26, 23, 20, 0.028) 0.55px, transparent 0.55px);
-  background-size: auto, 6px 6px;
+    linear-gradient(
+      98deg,
+      rgba(15, 42, 28, 0.025),
+      transparent 42%,
+      rgba(176, 138, 91, 0.03)
+    );
+}
+
+.afternoon-light {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(248, 243, 234, 0.22) 0%,
+      transparent 36%,
+      rgba(140, 94, 50, 0.03) 100%
+    ),
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 44px,
+      rgba(15, 42, 28, 0.018) 44px,
+      rgba(15, 42, 28, 0.018) 47px
+    ),
+    radial-gradient(
+      ellipse 46% 38% at 16% 10%,
+      rgba(176, 128, 118, 0.045),
+      transparent 70%
+    );
+  background-size: 100% 100%, 100% 240%, 100% 100%;
+  background-position: 0 0, 0 0, 0 0;
+  mix-blend-mode: multiply;
+  animation: afternoon-drift 80s ease-in-out infinite alternate;
+}
+
+@keyframes afternoon-drift {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+  }
+
+  to {
+    background-position: 0 0, 0 40px, 6% 4%;
+  }
+}
+
+.letterhead-watermark {
+  -webkit-mask-image: radial-gradient(
+    ellipse 58% 48% at 50% 42%,
+    #000 18%,
+    transparent 74%
+  );
+  mask-image: radial-gradient(
+    ellipse 58% 48% at 50% 42%,
+    #000 18%,
+    transparent 74%
+  );
+}
+
+.plate-frame {
+  border: 1px solid rgba(176, 138, 91, 0.38);
+  background: rgba(248, 243, 234, 0.35);
+  padding: 0.7rem;
+}
+
+.plate-frame-inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(176, 138, 91, 0.2);
+  padding: 0.85rem 0.7rem 0.5rem;
 }
 
 .hairline {

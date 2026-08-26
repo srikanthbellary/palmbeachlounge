@@ -39,7 +39,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-copper/25 bg-parchment md:bg-parchment/88 md:backdrop-blur-md">
-      <div className="mx-auto flex max-w-folio items-center justify-between gap-4 px-5 py-2.5 md:hidden">
+      <div className="mx-auto flex max-w-folio items-center justify-between gap-4 px-8 py-2.5 md:hidden">
         <Link
           href="/"
           className="whitespace-nowrap font-display text-[0.68rem] uppercase tracking-house text-ink"
@@ -62,7 +62,7 @@ export function Header() {
         id={menuId}
         aria-label="Primary"
         hidden={!open}
-        className="border-t border-copper/25 bg-parchment px-5 py-5 md:hidden"
+        className="border-t border-copper/25 bg-parchment px-8 py-5 md:hidden"
       >
         <ul className="flex flex-col gap-4 text-[0.7rem] uppercase tracking-[0.22em] text-mute">
           {mobileLinks.map((item) => (

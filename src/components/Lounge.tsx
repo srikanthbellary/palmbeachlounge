@@ -1,3 +1,4 @@
+import { LoggiaElevation } from "@/components/craft/LoggiaElevation";
 import { Rule } from "@/components/Rule";
 
 export function Lounge() {
@@ -13,7 +14,10 @@ export function Lounge() {
         A house, not a scene
       </h2>
       <Rule className="mt-8" />
-      <div className="mx-auto mt-12 max-w-2xl space-y-6 text-base leading-[1.85] text-mute sm:text-[1.05rem]">
+      <div className="mx-auto mt-14 max-w-2xl">
+        <LoggiaElevation />
+      </div>
+      <div className="mx-auto mt-14 max-w-2xl space-y-6 text-base leading-[1.85] text-mute sm:text-[1.05rem]">
         <p>
           Palm Beach Lounge is a salon in the older sense of the word: a room
           for the afternoon, a table for conversation, and a quiet hour for
