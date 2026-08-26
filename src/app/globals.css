@@ -26,8 +26,25 @@ html {
     transition-duration: 0.01ms !important;
   }
 
-  .afternoon-light {
+  .afternoon-light,
+  .parfum-liquid,
+  .bijoux-glint,
+  .table-napkin,
+  .table-gleam,
+  .atelier-dress {
     animation: none !important;
+  }
+
+  .parfum-liquid {
+    transform: none;
+  }
+
+  .bijoux-glint {
+    opacity: 0.45;
+  }
+
+  .table-gleam {
+    opacity: 0.4;
   }
 }
 
@@ -75,12 +92,12 @@ body {
       180deg,
       transparent,
       transparent 44px,
-      rgba(15, 42, 28, 0.018) 44px,
-      rgba(15, 42, 28, 0.018) 47px
+      rgba(15, 42, 28, 0.03) 44px,
+      rgba(15, 42, 28, 0.03) 48px
     ),
     radial-gradient(
       ellipse 46% 38% at 16% 10%,
-      rgba(176, 128, 118, 0.045),
+      rgba(176, 128, 118, 0.055),
       transparent 70%
     );
   background-size: 100% 100%, 100% 240%, 100% 100%;
@@ -113,8 +130,9 @@ body {
 }
 
 .plate-frame {
-  border: 1px solid rgba(176, 138, 91, 0.38);
-  background: rgba(248, 243, 234, 0.35);
+  position: relative;
+  border: 1px solid rgba(176, 138, 91, 0.34);
+  background: transparent;
   padding: 0.7rem;
 }
 
@@ -123,8 +141,107 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(176, 138, 91, 0.2);
-  padding: 0.85rem 0.7rem 0.5rem;
+  border: 1px solid rgba(176, 138, 91, 0.16);
+  padding: 0.55rem 0.45rem 0.35rem;
+}
+
+.parfum-liquid {
+  transform-origin: 100px 186px;
+  animation: parfum-slosh 9s ease-in-out infinite;
+}
+
+.bijoux-glint {
+  opacity: 0.22;
+  animation: bijoux-shine 8s ease-in-out infinite;
+}
+
+.bijoux-glint-b {
+  animation-duration: 10s;
+  animation-delay: 1.8s;
+}
+
+.bijoux-glint-c {
+  animation-duration: 11s;
+  animation-delay: 3.4s;
+}
+
+.table-napkin {
+  transform-origin: 124px 142px;
+  animation: table-settle 11s ease-in-out infinite;
+}
+
+.table-gleam {
+  animation: table-gleam 8s ease-in-out infinite;
+}
+
+.atelier-dress {
+  transform-origin: 100px 28px;
+  animation: atelier-sway 10s ease-in-out infinite;
+}
+
+@keyframes parfum-slosh {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(2.4px) rotate(1.1deg);
+  }
+}
+
+@keyframes bijoux-shine {
+  0%,
+  100% {
+    opacity: 0.18;
+  }
+
+  50% {
+    opacity: 0.82;
+  }
+}
+
+@keyframes table-settle {
+  0%,
+  100% {
+    transform: rotate(-0.45deg);
+  }
+
+  50% {
+    transform: rotate(0.55deg);
+  }
+}
+
+@keyframes table-gleam {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes atelier-sway {
+  0%,
+  100% {
+    transform: rotate(-0.85deg);
+  }
+
+  50% {
+    transform: rotate(0.95deg);
+  }
+}
+
+.calling-card {
+  border: 1px solid rgba(176, 138, 91, 0.34);
+  padding: 0.7rem;
+}
+
+.calling-card-inner {
+  border: 1px solid rgba(176, 138, 91, 0.16);
+  padding: 1.25rem 1rem 0.85rem;
 }
 
 .hairline {

@@ -1,3 +1,4 @@
+import { LoggiaElevation } from "@/components/craft/LoggiaElevation";
 import { Rule } from "@/components/Rule";
 
 export function Visit() {
@@ -13,6 +14,11 @@ export function Visit() {
         By appointment
       </h2>
       <Rule className="mt-8" />
+      <div className="calling-card mx-auto mt-14 max-w-2xl">
+        <div className="calling-card-inner">
+          <LoggiaElevation />
+        </div>
+      </div>
       <div className="mx-auto mt-12 max-w-xl space-y-6 text-base leading-[1.85] text-mute">
         <p>
           The house receives when a time has been set. Write first. We will

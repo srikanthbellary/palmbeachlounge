@@ -17,7 +17,7 @@ export function FourPointStar({
     >
       <path
         fill="currentColor"
-        d="M12 0.8 L13.28 10.05 L23.2 12 L13.28 13.95 L12 23.2 L10.72 13.95 L0.8 12 L10.72 10.05 Z"
+        d="M12 0.6 L14.15 9.7 L23.4 12 L14.15 14.3 L12 23.4 L9.85 14.3 L0.6 12 L9.85 9.7 Z"
       />
     </svg>
   );

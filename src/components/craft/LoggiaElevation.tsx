@@ -69,7 +69,7 @@ export function LoggiaElevation() {
   return (
     <svg
       viewBox="0 0 640 248"
-      className="mx-auto h-auto w-full max-w-2xl text-copper"
+      className="mx-auto h-auto w-full text-copper"
       aria-hidden
     >
       <g {...stroke}>

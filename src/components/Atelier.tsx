@@ -23,21 +23,21 @@ export function Atelier() {
           page.
         </p>
 
-        <ul className="mx-auto mt-20 grid max-w-4xl gap-x-16 gap-y-20 sm:grid-cols-2">
+        <ul className="mx-auto mt-20 grid max-w-3xl gap-x-20 gap-y-24 sm:grid-cols-2">
           {categories.map((category) => {
             const pieces = itemsFor(category.id);
 
             return (
               <li key={category.id} className="flex flex-col items-center">
-                <figure className="flex w-full max-w-[19rem] flex-col items-center">
-                  <div className="plate-frame aspect-square w-full">
+                <figure className="flex w-full max-w-[17.5rem] flex-col items-center">
+                  <div className="plate-frame aspect-[4/5] w-full">
                     <div className="plate-frame-inner">
                       <PlateStillLife id={category.id} />
                     </div>
                   </div>
-                  <figcaption className="mt-8">
-                    <h3 className="font-display text-lg uppercase tracking-house text-ink">
-                      Plate {category.plate} — {category.name}
+                  <figcaption className="mt-7">
+                    <h3 className="font-display text-[1.05rem] uppercase tracking-house text-ink">
+                      {category.name}
                     </h3>
                     <p className="mx-auto mt-4 max-w-xs text-sm leading-relaxed text-mute">
                       {category.sentence}
