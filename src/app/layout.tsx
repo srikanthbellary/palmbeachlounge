@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/logo-pbl.png",
-        width: 1024,
-        height: 1024,
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
         alt: site.name,
       },
     ],
@@ -50,11 +50,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.name,
     description: site.description,
-    images: ["/logo-pbl.png"],
+    images: ["/og.jpg"],
   },
   icons: {
-    icon: "/logo-pbl.png",
-    apple: "/logo-pbl.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   alternates: {
     canonical: site.url,
